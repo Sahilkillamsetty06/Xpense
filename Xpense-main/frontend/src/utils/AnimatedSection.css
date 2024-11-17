@@ -1,0 +1,50 @@
+.animated-section {
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Slightly translate down */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition effects */
+  }
+  
+  .animated-section.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+
+  /* .animated-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Default transition */
+
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 1;
+  }
+  
+  /* Slide-in from top */
+  .slide-in {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .slide-in.fade-in {
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  /* Slide-in from bottom */
+  .slide-in-bottom {
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .slide-in-bottom.fade-in {
+    transform: translateY(0); /* Move to original position */
+  }
+
+  :root {
+    --animate-duration: 2000ms;
+    --animate-delay: 0.9s;
+  }
+  
+
+  

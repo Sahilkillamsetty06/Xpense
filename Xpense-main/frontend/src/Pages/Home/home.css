@@ -1,0 +1,220 @@
+.filterRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+/* .data-table {
+    border-collapse: collapse;
+  }
+  
+.data-table thead th {
+    background-color: #f5f5f5;
+} */
+
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%; /* Make table take full width of container */
+}
+
+.data-table thead th {
+    background-color: #f5f5f5;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.data-table td {
+    max-width: 100px; /* Set your desired max width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.data-table th{
+    max-width: 100px; /* Set your desired max width */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.data-table tbody td {
+    padding: 10px;
+}
+
+.addButtons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120%;
+}
+
+.icons-handle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    /* width: 100%; */
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+  
+/* .data-table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}*/
+  
+/* .data-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}  */
+
+.bankContainerBtn{
+    margin-left: 10px;
+}
+
+.banks{
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+
+.bankNames{
+    /* margin-left: 5px; */
+    margin-bottom: 20px;
+    /* margin-right: 5px; */
+
+}
+
+.containerBtn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+.mobileBtn{
+    display: none !important;
+}
+
+.iconBtnBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* padding: 10px; */
+    /* border: 2px solid white; */
+    /* border-radius: 8px; */
+    
+
+}
+
+.iconActive{
+    background-color: white;
+    color: black;
+}
+.iconDeactive{
+    background-color: black;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .filterRow {
+        padding: 0px !important;
+        margin-top: 0px !important;
+        display: flex;
+        gap: "5px";
+        
+    }
+    .addNew{
+        /* padding-top: 20px; */
+        display: none !important;
+    }
+    .mobileBtn{
+        display: inline-block !important;
+    }
+    .iconBtnBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px;
+        
+    }
+    
+    .date{
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: "10px";
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .date .form-group{
+        width: 45%;
+    }
+
+    .containerBtn{
+        margin-left: 0px !important;
+    }
+
+    .data-table td, .data-table th {
+        max-width: 75px; /* Set your desired max width */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.same-size-button {
+    width: 100%; /* This ensures the button takes up the full width of the Col */
+    text-align: center;
+    white-space: nowrap;        /* Prevent text from wrapping onto multiple lines */
+    overflow: hidden;           /* Hide overflowed text */
+    text-overflow: ellipsis;  
+  }
+
+  .bank-button {
+    background-color: #4a4a4a; /* Medium gray to complement the white table header */
+    color: #d4af37; /* Muted gold for the text */
+    border: 1px solid #d4af37; /* Gold border for subtle contrast */
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bank-button:hover {
+    background-color: #5c5c5c; /* Lighter gray on hover */
+    color: #f1c40f; /* Slightly brighter gold */
+    box-shadow: 0px 0px 5px 1px rgba(212, 175, 55, 0.2); /* Softer shadow for a minimal glow */
+  }
+  
+  .no-bg {
+    background: transparent; /* No background */
+    color: #d4af37; /* Gold text color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.no-bg:hover {
+    color: #f1c40f; /* Slightly brighter color on hover */
+    background: none !important;
+}
+
+
+
+  
+
+
+  
+  
+  

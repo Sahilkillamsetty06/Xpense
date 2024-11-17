@@ -1,0 +1,46 @@
+.navButton {
+  width: auto;
+  padding: 0.5rem 1rem;
+  margin-bottom: 10px;
+  border-color: black;
+  display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton i {
+  font-size: 24px; /* Increase the size of the icon */
+  margin-bottom: 5px; /* Add space between icon and text */
+}
+
+/* Small letter for button text */
+.navButton small {
+  font-size: 12px; /* Make the text smaller */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Keep the logout button at the top */
+  .navButton {
+    width: 100%; /* Make buttons full-width */
+    margin: 5px 0;
+  }
+
+  /* Footer buttons at the bottom of the screen */
+  .navButtons-bottom {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 3;
+  }
+
+  .navButtons-bottom .navButton {
+    width: 24%; /* Adjust width for better alignment */
+  }
+}
